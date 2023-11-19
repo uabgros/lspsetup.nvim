@@ -1,7 +1,11 @@
 local M = {}
 
-M.setup = function() print("setup done...") end
+M.setup = function()
+  print("Starting Lsp...")
+end
 
-M.todo = function() print("Hello world!") end
+M.todo = function()
+  vim.cmd("LspStart")
+end
 
 return M
